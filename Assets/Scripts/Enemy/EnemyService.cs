@@ -88,3 +88,12 @@ namespace StatePattern.Enemy
         private bool PlayerWon() => activeEnemies.Count == 0;
     }
 }
+
+public enum States
+{
+    IDLE,
+    ROTATING,
+    SHOOTING,
+    PATROLLING,
+    CHASING
+}
