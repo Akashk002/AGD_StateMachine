@@ -1,9 +1,6 @@
 using StatePattern.Enemy;
 using StatePattern.Player;
 using StatePattern.StateMachine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class HitmanController : EnemyController
 {
@@ -12,7 +9,7 @@ public class HitmanController : EnemyController
     public HitmanController(EnemyScriptableObject enemyScriptableObject) : base(enemyScriptableObject)
     {
         enemyView.SetController(this);
-        CreateStateMachine();
+       CreateStateMachine();
         stateMachine.ChangeState(States.IDLE);
     }
 

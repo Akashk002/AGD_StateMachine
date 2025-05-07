@@ -27,5 +27,6 @@ namespace StatePattern.Enemy
         public List<Vector3> PatrollingPoints;
         public float PlayerStoppingDistance;
         public Vector3 TeleportingRadius { get; internal set; }
+        public int CloneCount;
     }
 }
